@@ -1,0 +1,63 @@
+@font-face { 
+font-family: "PT Sans";
+src: url(../fonts/ptsansnarrow.woff);
+src: url(../fonts/ptsansnarrowbold.woff2);
+ }
+
+ li { list-style: none; }
+body {
+font-family: "PT Sans", Arial, Sans-serif;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+text-transform: uppercase;
+}
+.quadrilateral { width: 12px; height: 12px; background: url(../img/svg/romb.svg) no-repeat; 
+}
+.main-nav { 
+background: #000; 
+}
+.main-nav a, footer a { 
+color: white;
+text-decoration: none;
+ }
+
+ .second-nav li:last-child { 
+color: #aba9a7;
+  }
+
+.main-catalog span { 
+line-height: 18px;
+ } 
+
+ .item-description span { 
+color: #aba9a7;
+  }
+ .set-includes li 
+ {
+ 	background: url(../img/svg/romb.svg) no-repeat;
+ 	background-size: 12px;
+ 	background-position-y: 50%;
+ 	padding-left: 20px;
+ }
+
+ main a { 
+text-decoration: none;
+color: #000;
+  }
+
+main { background: url(../img/texture-bg.jpg) repeat-y;
+background-size: cover;}
+
+h1 { 
+font-size: 24px;
+ }
+
+footer { 
+	background: #252525;
+ }
+  footer { color: white; 
+ 	line-height: 24px;}
+ footer a { 
+text-decoration: underline;
+  }
