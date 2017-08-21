@@ -1,63 +1,124 @@
+* { 
+  margin: 0;
+  padding: 0; 
+}
+.vhidden { 
+  position: absolute; 
+  overflow: hidden; 
+  clip: rect(0 0 0 0); 
+  height: 1px; width: 1px; 
+  margin: -1px; padding: 0; border: 0; 
+}
 @font-face { 
-font-family: "PT Sans";
-src: url(../fonts/ptsansnarrow.woff);
-src: url(../fonts/ptsansnarrowbold.woff2);
- }
+  font-family: "PT Sans";
+  src: url(../fonts/ptsansnarrow.woff);
+  src: url(../fonts/ptsansnarrowbold.woff2);
+}
 
- li { list-style: none; }
+li { 
+  list-style: none;
+}
+
 body {
-font-family: "PT Sans", Arial, Sans-serif;
-font-weight: 700;
-font-size: 14px;
-line-height: 20px;
-text-transform: uppercase;
+  font-family: "PT Sans", Arial, Sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
 }
-.quadrilateral { width: 12px; height: 12px; background: url(../img/svg/romb.svg) no-repeat; 
+.wrapper { 
+  width: 100%;
+  background: url(../img/texture-bg.jpg) repeat-y;
+  background-size: cover;
 }
-.main-nav { 
-background: #000; 
-}
-.main-nav a, footer a { 
-color: white;
-text-decoration: none;
+
+.container { 
+  width: 960px;
+  margin: 0 auto;
+
  }
 
- .second-nav li:last-child { 
-color: #aba9a7;
-  }
+.quadrilateral { 
+  width: 12px; 
+  height: 12px; 
+  background: url(../img/svg/romb.svg) no-repeat; 
+}
+
+.main-nav {
+  width: 100%;
+  background: #000;
+}
+
+.main-nav ul { 
+  margin: 0 auto; 
+  display: flex; 
+  width: 960px;
+  height: 72px;
+  align-items: center;
+}
+.main-nav ul li { 
+  margin-right: 29px;
+}
+
+.main-nav ul li:first-child {
+  margin-left: 20px;
+}
+.main-nav ul li:last-child {
+  margin-left: 210px;
+  margin-right: 29px;
+}
+ .main-nav a, footer a { 
+  color: white;
+  text-decoration: none;
+}
+
+.second-nav li { 
+  display: inline-block; 
+}
+
+.second-nav li:last-child { 
+  color: #aba9a7;
+}
+.catalog-form  {
+  width: 190px;
+}
+.catalog-form label {
+  display: block;
+}
 
 .main-catalog span { 
-line-height: 18px;
- } 
+  line-height: 18px;
+} 
 
- .item-description span { 
-color: #aba9a7;
-  }
- .set-includes li 
+.item-description span { 
+  color: #aba9a7;
+}
+.set-includes li 
  {
- 	background: url(../img/svg/romb.svg) no-repeat;
- 	background-size: 12px;
- 	background-position-y: 50%;
- 	padding-left: 20px;
- }
+  background: url(../img/svg/romb.svg) no-repeat;
+  background-size: 12px;
+  background-position-y: 50%;
+  padding-left: 20px;
+}
 
- main a { 
-text-decoration: none;
-color: #000;
-  }
+main a { 
+  text-decoration: none;
+  color: #000;
+}
 
-main { background: url(../img/texture-bg.jpg) repeat-y;
-background-size: cover;}
 
 h1 { 
-font-size: 24px;
- }
+  font-size: 24px;
+}
 
 footer { 
-	background: #252525;
+  background: #252525;
+}
+
+footer {
+ color: white; 
+ line-height: 24px;}
+
+footer a { 
+  text-decoration: underline;
  }
-  footer { color: white; 
- 	line-height: 24px;}
- footer a { 
-text-decoration: underline;
-  }
