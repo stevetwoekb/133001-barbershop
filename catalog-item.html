@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Каталог</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,7 +21,7 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="container">
+	<main class="container bg-white">
 		<h1>Набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;</h1>
 			<ul class="second-nav">
 				<li><a href="#">Главная</a></li>
@@ -29,9 +30,10 @@
 				<li class="quadrilateral"></li>
 				<li><a href="#">Средства для ухода</a></li>
 				<li class="quadrilateral"></li>
-				<li>Набор для путешествий "BAXTER OF CALIFORNIA"</li>
+				<li><span>Набор для путешествий "BAXTER OF CALIFORNIA"</span></li>
 			</ul>
 				<section class="catalog-gallery">
+				<h2 class="vhidden">Фотографии набора</h2>
 			<div class="catalog-gallery-big">
 				<img src="img/main-gallery-prewew.jpg" width="460" height="498" alt="Большая картинка">
 			</div>
@@ -48,7 +50,7 @@
 			<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 			<div class="catalog-price">
 				<b>2 900 руб.</b>
-				<a href="#">Купить</a>
+				<a href="#" class="btn">Купить</a>
 			</div>
 			<h2>В набор входят</h2>
 			<ul class="set-includes">
@@ -60,8 +62,9 @@
 			</ul>
 		</section>
 	</main>
-<footer class="main-footer">
+    	<footer class="main-footer">
 	<section class="footer-left-section">
+    <h2 class="vhidden">Адрес магазина</h2>
 		<p>
 			БАРБЕРШОП «БОРОДИНСКИЙ» <br>
 			АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8 <br>
@@ -70,28 +73,43 @@
 		</p>
 	</section>
 	<section class="footer-center-section">
+    <h2 class="vhidden">Мы в социальных сетях</h2>
 		<p>Давайте дружить</p>
-		<ul>
-			<li><a href=""><img src="img/svg/vk.svg" alt="Вконтакте"></a></li>
-			<li><a href=""><img src="img/svg/facebook.svg" alt="Facebook"></a></li>
-			<li><a href=""><img src="img/svg/instagram.svg" alt="Инстаграмм"></a></li>
+		<ul class="footer-list">
+
+			<li class="footer-list-item"><a href="" class="btn social-btn"><img src="img/svg/vk.svg" alt="Вконтакте" >
+
+      <span class="vhidden">Вконтакте</span></a></li>
+
+			<li class="footer-list-item"><a href="" class="btn social-btn"><img src="img/svg/facebook.svg" alt="Facebook">
+
+      <span class="vhidden">Фейсбук</span></a></li>
+
+			<li class="footer-list-item"><a href="" class="btn social-btn"><img src="img/svg/instagram.svg" alt="Инстаграмм">
+      <span class="vhidden">Инстаграмм</span></a></li>
+
 		</ul>
 	</section>
 		<section class="footer-right-section">
+    <h2 class="vhidden">Информация о разработчике</h2>
 		<p>Разработано</p>
-		<a href="#">HTML ACADEMY</a>
+		<a  class="btn footer-copyright" href="#">HTML ACADEMY</a>
 	</section>
 	</footer>
 	<!-- ПОП-АП -->
-	<div class="pop-up">
+		<div class="pop-up bg-white">
 		<b>Личный кабинет</b>
 		<p>Ведите пожалуйста свой логин и пароль</p>
-		<input type="text" placeholder="Логин">
-		<input type="text" placeholder="Пароль">
+    <form action="get">
+    <label for="login">Логин</label>
+		<input type="text" placeholder="Логин" name="login" id="login">
+    <label for="login">Пароль</label>
+		<input type="password" placeholder="Пароль" name="password" id="password">
 		<input type="checkbox">
 		<a href="#">Я забыл пароль	</a>
-		<button>Войти</button>
+		<button class="btn">Войти</button>
 		<button>закрыть</button>
+    </form>
 	</div>
 </div>
 </body>

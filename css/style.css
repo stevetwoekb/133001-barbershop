@@ -1,7 +1,4 @@
-* { 
-  margin: 0;
-  padding: 0; 
-}
+
 .vhidden { 
   position: absolute; 
   overflow: hidden; 
@@ -9,116 +6,204 @@
   height: 1px; width: 1px; 
   margin: -1px; padding: 0; border: 0; 
 }
+
 @font-face { 
   font-family: "PT Sans";
   src: url(../fonts/ptsansnarrow.woff);
   src: url(../fonts/ptsansnarrowbold.woff2);
 }
 
-li { 
-  list-style: none;
-}
-
-body {
-  font-family: "PT Sans", Arial, Sans-serif;
-  font-weight: 700;
+html, body { 
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 18px;
+  font-weight: 700;
   text-transform: uppercase;
-}
-.wrapper { 
-  width: 100%;
-  background: url(../img/texture-bg.jpg) repeat-y;
-  background-size: cover;
-}
-
-.container { 
-  width: 960px;
-  margin: 0 auto;
-
  }
 
-.quadrilateral { 
-  width: 12px; 
-  height: 12px; 
-  background: url(../img/svg/romb.svg) no-repeat; 
+a { 
+ text-decoration: none;
+ color: #000;
 }
 
-.main-nav {
-  width: 100%;
+li {
+ list-style: none;
+}
+
+ul, h1, b, a  {
+  margin: 0;
+  padding: 0;
+}
+
+.main-head{ 
   background: #000;
+  color: white;
 }
 
-.main-nav ul { 
-  margin: 0 auto; 
-  display: flex; 
-  width: 960px;
-  height: 72px;
-  align-items: center;
-}
-.main-nav ul li { 
-  margin-right: 29px;
-}
-
-.main-nav ul li:first-child {
-  margin-left: 20px;
-}
-.main-nav ul li:last-child {
-  margin-left: 210px;
-  margin-right: 29px;
-}
- .main-nav a, footer a { 
+.main-head a { 
   color: white;
   text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.second-nav li { 
-  display: inline-block; 
+.main-head a:hover,
+.main-head a:focus{
+  background: #242424;
+  outline: none;
 }
 
-.second-nav li:last-child { 
-  color: #aba9a7;
-}
-.catalog-form  {
-  width: 190px;
-}
-.catalog-form label {
-  display: block;
+.bg-white {
+  background-color: #f7f4f1;
+  background: url(../img/texture-bg.jpg) repeat center;
 }
 
-.main-catalog span { 
-  line-height: 18px;
-} 
-
-.item-description span { 
-  color: #aba9a7;
-}
-.set-includes li 
- {
-  background: url(../img/svg/romb.svg) no-repeat;
-  background-size: 12px;
-  background-position-y: 50%;
-  padding-left: 20px;
+.main-title {
+  font-size: 30px;
+  line-height: 42px;
 }
 
-main a { 
-  text-decoration: none;
+.second-nav {
+  line-height: 20px;
+}
+
+.second-nav a {
   color: #000;
 }
 
-
-h1 { 
-  font-size: 24px;
-}
-
-footer { 
-  background: #252525;
-}
-
-footer {
- color: white; 
- line-height: 24px;}
-
-footer a { 
-  text-decoration: underline;
+.second-nav span, 
+.item-description span { 
+  color: #aba9a7;
  }
+
+.form-block {
+  border: none;
+}
+
+.form-block legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.form-block label {
+  line-height: 18px;
+}
+
+.btn {
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 18px;
+  background: #000;
+  border: none;
+}
+.btn:hover,
+.btn:focus {
+ background: #663d15;
+}
+
+.btn:active {
+  background: white;
+  color: black;
+}
+
+.form-btn {
+  width: 112px;
+  height: 45px;
+}
+
+.list-item label:hover,
+.list-item label:focus,
+.list-item label:active {
+  color: #663d15;
+}
+
+
+.catalog {
+  width: 720px;
+}
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog-item {
+  margin: 10px;
+  width: 220px;
+  background: white;
+}
+
+.catalog-item p {
+  margin: 0px;
+}
+
+.catalog-item-price b,
+.catalog-price b {
+ background: #e5e5e5;
+}
+
+.main-footer {
+  color: white;
+  background-color: #1f1f1f;
+  background: url(../img/footer-bg.jpg) repeat center;
+}
+
+.main-footer {
+  display: flex;
+}
+
+.main-footer a {
+  color: white;
+  text-decoration: underline;
+}
+
+.footer-list{
+  display: flex;
+  align-items: center;
+}
+
+.footer-list-item {
+  margin-left: 6px;
+  align-items: center;
+  display: flex;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height:  43px;
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background: white;
+}
+
+.footer-copyright:hover,
+.footer-copyright:focus {
+  background: white;
+  color: #000;
+
+}
+
+.pop-up input { 
+  background: transparent;
+  border: solid 2px black;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.pop-up input:hover,
+.pop-up input:focus,
+.pop-up input:active {
+   border: solid 2px #663d15;
+   outline: none;
+}
