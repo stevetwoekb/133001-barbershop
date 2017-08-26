@@ -12,7 +12,6 @@
   src: url(../fonts/ptsansnarrow.woff);
   src: url(../fonts/ptsansnarrowbold.woff2);
 }
-
 html, body { 
   margin: 0;
   padding: 0;
@@ -32,14 +31,37 @@ li {
  list-style: none;
 }
 
-ul, h1, b, a  {
+ul, h1, b, a, p, form, input, label, fieldset {
   margin: 0;
   padding: 0;
 }
+.box {
+  box-sizing: border-box;
+}
 
+.wrapper {
+    position: relative;
+}
+
+.container { 
+width: 940px;
+padding: 0 10px;
+margin: 0 auto; }
 .main-head{ 
   background: #000;
   color: white;
+}
+.nav-list {
+  padding-left: 20px;
+  padding-right: 20px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.nav-list li:last-child {
+  margin-left: 180px;
 }
 
 .main-head a { 
@@ -63,10 +85,21 @@ ul, h1, b, a  {
 .main-title {
   font-size: 30px;
   line-height: 42px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
+.main-title-block {
+
+  display: flex;
+}
 .second-nav {
-  line-height: 20px;
+  display: flex;
+  width: 310px;
+  justify-content: space-between; 
+}
+.item-page {
+  width: 630px;
 }
 
 .second-nav a {
@@ -77,6 +110,67 @@ ul, h1, b, a  {
 .item-description span { 
   color: #aba9a7;
  }
+.main-catalog-div {
+  display: flex;
+  margin-top: 55px;
+  justify-content: space-between;
+}
+
+.catalog-left-block {
+  display: flex;
+   flex-basis: 220px;
+   margin-right: 10px;
+}
+
+.catalog-right-block {
+  display: flex;
+  width: 710px;
+
+}
+
+.catalog-gallery {
+width: 470px;
+margin-right: 10px;
+
+}
+
+.item-description {
+ padding: 0 10px;
+ width: 400px;
+ line-height: 24px;
+}
+.descpt-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.catalog-gallery-big {
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.catalog-gallery-samll {
+  max-width: 460px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.catalog-price {
+  margin-bottom: 50px;
+}
+.descpt-titile-big {
+  margin-bottom: 20px;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.set-includes li {
+ padding-left: 20px;
+ line-height: 24px;
+}
+
 
 .form-block {
   border: none;
@@ -123,21 +217,33 @@ ul, h1, b, a  {
   color: #663d15;
 }
 
-
-.catalog {
-  width: 720px;
+.list-item input:hover,
+.list-item input:focus,
+.list-item input:active {
+  color: #663d15;
 }
+
 .catalog-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 .catalog-item {
-  margin: 10px;
   width: 220px;
   background: white;
+  margin-bottom: 20px;
+  padding: 10 15px;
+}
+.catalog-item p {
+  margin: 0;
+}
+.catalog-item h3 {
+  padding-left: 10px;
 }
 
-.catalog-item p {
+.catalog-item-price{
+  padding-left: 10px;
+  padding-bottom: 15px;
   margin: 0px;
 }
 
@@ -146,14 +252,41 @@ ul, h1, b, a  {
  background: #e5e5e5;
 }
 
+.pagination-list {
+  display: flex;
+  width: 220px;
+  margin-bottom: 50px;
+}
+.pagination-item {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  height: 43px;
+  color: white;
+  margin-right: 10px;
+}
 .main-footer {
+  min-height: 190px;
   color: white;
   background-color: #1f1f1f;
   background: url(../img/footer-bg.jpg) repeat center;
 }
-
-.main-footer {
+.footer-flex {
+  min-height: 190px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left-section,
+.footer-center-section,
+.footer-right-section {
+  flex-basis: 313px;
+}
+
+.footer-center-section {
+  text-align: center;
 }
 
 .main-footer a {
@@ -161,15 +294,14 @@ ul, h1, b, a  {
   text-decoration: underline;
 }
 
-.footer-list{
-  display: flex;
-  align-items: center;
+.footer-list-item {
+display: inline-block;
+vertical-align: bottom;
+
 }
 
-.footer-list-item {
-  margin-left: 6px;
-  align-items: center;
-  display: flex;
+.footer-right-section {
+ text-align: right;
 }
 
 .social-btn {
@@ -192,13 +324,52 @@ ul, h1, b, a  {
 
 }
 
+.pop-up {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 460px;
+}
+.pop-up form {
+  display: block;
+}
+
+.pop-up h3 {
+  font-family: "PT sans", Arial, sans-serif;
+  font-size: 30px;
+}
+.center-pop {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
 .pop-up input { 
+  margin-bottom: 10px;
+  padding: 15px;
   background: transparent;
   border: solid 2px black;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   color: black;
   text-transform: uppercase;
+}
+
+.pop-up input[type="text"],
+.pop-up input[type="password"]
+{
+  width: 300px;
+}
+
+.long { 
+width: 100%;
+height: 43px; 
+}
+
+.pop-up label a {
+  margin-left:97px;
+  text-decoration: underline;
 }
 
 .pop-up input:hover,
