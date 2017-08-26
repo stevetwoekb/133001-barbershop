@@ -122,6 +122,9 @@ margin: 0 auto; }
    margin-right: 10px;
 }
 
+.form-block {
+  margin-bottom: 50px;
+}
 .catalog-right-block {
   display: flex;
   width: 710px;
